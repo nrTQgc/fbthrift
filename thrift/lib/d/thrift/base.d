@@ -96,7 +96,7 @@ template logFormatted(alias target) {
     T...)(string format, T args) if (
     __traits(compiles, { target(""); })
   ) {
-    import std.format, std.stdio;
+    /+import std.format, std.stdio;
     if (target !is null) {
       scope(exit) g_formatBuffer.clear();
 
@@ -112,7 +112,7 @@ template logFormatted(alias target) {
         formattedWrite(g_formatBuffer, format, args);
       }
       target(g_formatBuffer.data);
-    }
+    }+/
   }
 }
 

@@ -15,6 +15,7 @@
  */
 
 // Public D interface
+module thrift.async.teventbase;
 
 class CppTEventBase {
   this(TEventBase* eb) {

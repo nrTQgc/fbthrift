@@ -18,7 +18,8 @@
  */
 module thrift.codegen.processor;
 
-import std.algorithm : find, join;
+import std.array : join;
+import std.algorithm.searching : find;
 import std.array : empty, front;
 import std.conv : to;
 import std.traits : ParameterTypeTuple, ReturnType, Unqual;

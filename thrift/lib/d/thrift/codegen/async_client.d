@@ -18,7 +18,7 @@
  */
 module thrift.codegen.async_client;
 
-import std.algorithm : join;
+import std.array: join;
 import std.conv : text, to;
 import std.traits : ParameterStorageClass, ParameterStorageClassTuple,
   ParameterTypeTuple, ReturnType;
